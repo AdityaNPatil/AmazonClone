@@ -14,21 +14,24 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Component specific styling -->
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/panel.css">
     <link rel="stylesheet" href="./styles/carousel.css">
 
 </head>
 
 <body>
 
-    <!-- 📁 NAVBAR -->
+    <!-- 📁 HEADER -->
     <header>
+        
+        <!-- 📁 NAVBAR -->
         <nav class="navbar">
             <!-- logo -->
-            <div class="nav-logo nav-border">
+            <div class="nav-logo smallBorder">
                 <div class="logo"></div>
             </div>
             <!-- Deliver to -->
-            <div class="nav-address nav-border">
+            <div class="nav-address smallBorder">
                 <p id="add-first" class="nav-smallFont">Deliver to</p>
                 <div class="add-icon">  <!--icon font awes-->
                     <i class="fa-solid fa-location-dot"></i>
@@ -47,21 +50,33 @@
             </div>
             <!-- country -->
             <!-- Account -->
-            <div class="nav-signin nav-border">
+            <div class="nav-signin smallBorder">
                 <p class="nav-smallFont">Hello,Sign In</p>
                 <p class="nav-bigFont">Account and List</p>
             </div>
             <!-- Orders -->
-            <div class="nav-return nav-border">
+            <div class="nav-return smallBorder">
                 <p class="nav-smallFont">Returns</p>
                 <p class="nav-bigFont">& Orders</p>
             </div>
             <!-- Cart -->
-            <div class="nav-cart nav-border">
+            <div class="nav-cart smallBorder">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span class="nav-bigFont">Cart</span>
             </div>
         </nav>
+
+        <!-- 📁 2ND PANEL -->
+        <div class="panel">
+            <div class="panel-categories">
+                <i class="fa-solid fa-bars"></i>
+                <p>All</p>
+            </div>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
     </header>
 
 
