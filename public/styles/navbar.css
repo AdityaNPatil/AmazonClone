@@ -22,10 +22,11 @@
 }
 
 /* 📁 Small and Large fonts in navbar */
-.nav-smallFont{
+.nav-smallFont {
     font-size: 0.85rem;
 }
-.nav-bigFont{
+
+.nav-bigFont {
     font-size: 1rem;
     font-weight: 550;
 }
@@ -33,7 +34,7 @@
 /* 📁 logo div */
 .nav-logo {
     height: 90%;
-    width: 7vw;
+    width: 5%;
 }
 
 .logo {
@@ -67,28 +68,29 @@
     /* align-items: center;   */
 
     height: 70%;
-    width: 40vw;
+    width: 50%;
     border-radius: 5px;
 
     background-color: rgb(158, 158, 89);
 }
 
-.nav-search select{
+.nav-search select {
     border: none;
     border-radius: 5px 0 0 5px;
-    
+
     padding: 5px;
     text-align: center;
     background-color: #f3f3f3;
 }
 
-.nav-search input{
-    width: 100%;        /*give empty area to input*/
+.nav-search input {
+    width: 100%;
+    /*give empty area to input*/
     font-size: 1rem;
     border: none;
 }
 
-.nav-search .search-icon{
+.nav-search .search-icon {
     border-radius: 0 5px 5px 0;
     width: 7%;
     font-size: 1.2rem;
@@ -103,22 +105,22 @@
     cursor: pointer;
 }
 
-.nav-search:hover{
+.nav-search:hover {
     border: 2px solid orange;
 }
 
 /* 📁 Account */
 /* Font styling already given in nav-smallFont , nav-bigFont */
-.nav-signin .nav-smallFont{
+.nav-signin .nav-smallFont {
     color: #cccccc;
 }
 
 /* 📁 Orders */
-.nav-return .nav-smallFont{
+.nav-return .nav-smallFont {
     color: #cccccc;
 }
 
 /* 📁 Cart */
-.nav-cart i{
+.nav-cart i {
     font-size: 25px;
 }
