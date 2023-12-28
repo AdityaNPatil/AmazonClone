@@ -1,7 +1,3 @@
-body{
-    margin: 0;
-    padding: 0;
-}
 /* 📁 carousel container */
 .slider-wrapper {
     margin: 1rem;
@@ -31,8 +27,9 @@ body{
     height:inherit;
     width: inherit;
 
-    aspect-ratio: 16/9;
+    /* aspect-ratio: 16/9; */
 }
+
 
 /* 📁 Carousel Buttons */
 .slide-arrow {
@@ -46,7 +43,7 @@ body{
     width: 2rem;
     font-size: 3rem;
 
-    background-color: rgba(60, 255, 0, 0.475);
+    /* background-color: rgba(60, 255, 0, 0.475); */
     border: none;
     padding: 0;
     cursor: pointer;
