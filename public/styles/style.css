@@ -4,6 +4,9 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+body{
+    background-color: #d8d8d8;
+}
 
 /* border on hover */
 .smallBorder {
@@ -327,9 +330,7 @@
     justify-content: space-evenly;
     align-items: center;
 
-    padding: 1rem 0;
-
-    background-color: #d8d8d8;
+    margin: 1rem 0;
 }
 
 .box {
@@ -377,7 +378,7 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, 50%);
     place-content: center;
 
     gap: 1rem;
@@ -408,9 +409,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 0.5rem;
 
-    padding: 1rem 0;
-    background-color: #d8d8d8;
+    background-color: #ffffff;
+
+    margin: 1rem;
+    padding: 1rem;
 }
 /* Image slider head section */
 .img-slider-head{
@@ -419,9 +423,6 @@
     align-items: center;
     gap: 0.5rem;
 
-    padding: 1rem;
-    margin: 0 1rem;
-    background-color: #ffffff;
 }
 .img-slider-head a{
     color: #007185;
@@ -436,27 +437,40 @@
     grid-template-columns: repeat(10 , 1fr);
     gap: 2rem;
     overflow-x: auto;
+    scrollbar-width: none;
 
-    margin: 0 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
+    padding-bottom: .2rem;  /*for scrollbar*/
+}
+/* Movie image slider (15 col modification)*/
+#movie-img-slider{
+    grid-template-columns: repeat(15 , 1fr);
+}
+/* Best Seller image slider(12 col modific */
+#bestSell-img-slider{
+    grid-template-columns: repeat(12 , 1fr);
 }
 
 /* 💡 Image slider scroll bar */
 .img-slider::-webkit-scrollbar{
-    width: 1px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
 }
 .img-slider::-webkit-scrollbar-thumb{
-    background: linear-gradient(to right , #000000 , #ff8c00);
+    background: linear-gradient(to right , #ffab3d, #0f1111);
     border-radius: 10px;
 }
 .img-slider::-webkit-scrollbar-track{
-    background-color: #00718521;
+    background-color: #cccccc;
     border-radius: 10px;
 }
 
 
+/* ////////////////////////////////////////////////////// */
+/* 📁 FOOTER */
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+}
 
 /* ////////////////////////////////////////////////////// */
 /* 📁 MEDIA QUERY */
