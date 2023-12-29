@@ -1,2 +1,2 @@
 # AmazonClone
-A clone of the amazon website
+A front-end clone of the amazon.com website
