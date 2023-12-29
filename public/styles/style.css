@@ -4,8 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #d8d8d8;
+    scroll-behavior: smooth;
 }
 
 /* border on hover */
@@ -405,7 +407,7 @@ body{
 }
 
 /* 💡💡💡 IMAGE SLIDER */
-.img-slider-container{
+.img-slider-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -416,50 +418,58 @@ body{
     margin: 1rem;
     padding: 1rem;
 }
+
 /* Image slider head section */
-.img-slider-head{
+.img-slider-head {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
 
 }
-.img-slider-head a{
+
+.img-slider-head a {
     color: #007185;
 }
-.img-slider-head a:hover{
+
+.img-slider-head a:hover {
     color: #ffab3d;
 }
 
 /* Image slider actual */
-.img-slider{
+.img-slider {
     display: grid;
-    grid-template-columns: repeat(10 , 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 2rem;
     overflow-x: auto;
     scrollbar-width: none;
 
-    padding-bottom: .2rem;  /*for scrollbar*/
+    padding-bottom: .2rem;
+    /*for scrollbar*/
 }
+
 /* Movie image slider (15 col modification)*/
-#movie-img-slider{
-    grid-template-columns: repeat(15 , 1fr);
+#movie-img-slider {
+    grid-template-columns: repeat(15, 1fr);
 }
+
 /* Best Seller image slider(12 col modific */
-#bestSell-img-slider{
-    grid-template-columns: repeat(12 , 1fr);
+#bestSell-img-slider {
+    grid-template-columns: repeat(12, 1fr);
 }
 
 /* 💡 Image slider scroll bar */
-.img-slider::-webkit-scrollbar{
+.img-slider::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
-.img-slider::-webkit-scrollbar-thumb{
-    background: linear-gradient(to right , #ffab3d, #0f1111);
+
+.img-slider::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #ffab3d, #0f1111);
     border-radius: 10px;
 }
-.img-slider::-webkit-scrollbar-track{
+
+.img-slider::-webkit-scrollbar-track {
     background-color: #cccccc;
     border-radius: 10px;
 }
@@ -467,11 +477,123 @@ body{
 
 /* ////////////////////////////////////////////////////// */
 /* 📁 FOOTER */
-.foot-panel1{
+/* Footer panel 1 */
+.foot-panel1 {
     background-color: #37475a;
     color: white;
+    text-decoration: none;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.foot-panel1:hover {
+    background-color: #26323f;
+}
+
+/* Footer panel 2 */
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.foot-panel2 ul{
+    margin: 1.5rem 0;
+}
+.foot-panel2 ul p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.foot-panel2 ul li{
+    margin-bottom: 0.5rem;
+    list-style: none;
+}
+.foot-panel2 li a{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 0.85rem;
+}
+.foot-panel2 li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* Footer panel 3 */
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.foot-logo{
+    height: 100%;
+    width: 10%;
+    background: url("../images/amazon_logo.png") no-repeat center center/contain;
+}
+
+.foot-select{
+    border: 2px solid #dddddd;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.foot-select select{
+    background-color: transparent;
+    border: none;
+    color: #dddddd;
+}
+
+.foot-select select option{
+    color: black;
+    background-color: #dddddd;
+    font-size: 1rem;
+}
+
+/* Foot Panel 4 */
+.foot-panel4{
+    background-color: #1e1f28;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel4 .pages a , .copyright{
+    font-size: 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.foot-panel4 .pages a{
+    margin: 0 0.5rem;
+}
+
+.foot-panel4 .pages a:hover{
+    text-decoration: underline;
+}
+
 
 /* ////////////////////////////////////////////////////// */
 /* 📁 MEDIA QUERY */
 /* Media Query */
+@media (max-width:550px){
+    /* Mobile hide and show */
+}
