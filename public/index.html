@@ -18,15 +18,57 @@
 
     <!-- 📁 HEADER -->
     <header id="header">
+        <!-- 📁 SIDEBAR ONLY FOR MOBILE PHONE -->
+        <nav class="sidebar">
+            <div id="side-top">
+                <li id="side-account">
+                    <a href=""><i class="fa-regular fa-user" style="color: #dddddd;"></i> Your Account</a>
+                </li>
+                <li class="menuClose">❌</li>
+                <li><a href=""><img src="./images/amazon_logo.png" alt="" height="50px"></a></li>
+            </div>
+
+            <li id="side-home">
+                <h3>
+                    <a href="">
+                    <i class="fa-solid fa-house"></i> Amazon Home
+                    </a>
+                </h3>
+            </li>
+            <hr>
+
+            <li id="side-trending">
+                <h3>Trending</h3>
+                <a href="">Home</a>
+            </li>
+
+            <hr>
+
+            <li id="side-topDept">
+                <h3>Top Departments</h3>
+                <a href="">Home</a>
+                <a href="">Health</a>
+                <a href="">Books</a>
+                <a href="">PC</a>
+                <a href="">Video Games</a>
+                <a href="">See All</a>
+            </li>
+            
+        </nav>
         
         <!-- 📁 NAVBAR -->
         <nav class="navbar">
+            <!-- sidebar open button-->
+            <div class="menuOpen">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
             <!-- logo -->
             <div class="nav-logo smallBorder">
                 <div class="logo"></div>
             </div>
             <!-- Deliver to -->
-            <div class="nav-address smallBorder">
+            <div class="nav-address smallBorder hideOnMobile">
                 <p id="add-first" class="nav-smallFont">Deliver to</p>
                 <div class="add-icon">  <!--icon font awes-->
                     <i class="fa-solid fa-location-dot"></i>
@@ -43,14 +85,13 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-            <!-- country -->
             <!-- Account -->
-            <div class="nav-signin smallBorder">
+            <div class="nav-signin smallBorder hideOnMobile">
                 <p class="nav-smallFont">Hello,Sign In</p>
                 <p class="nav-bigFont">Account and List</p>
             </div>
             <!-- Orders -->
-            <div class="nav-return smallBorder">
+            <div class="nav-return smallBorder hideOnMobile">
                 <p class="nav-smallFont">Returns</p>
                 <p class="nav-bigFont">& Orders</p>
             </div>
@@ -63,7 +104,7 @@
 
         <!-- 📁 2ND PANEL -->
         <div class="panel">
-            <div class="panel-categories smallBorder">
+            <div class="panel-categories smallBorder hideOnMobile">
                 <i class="fa-solid fa-bars"></i>
                 <span>All</span>
             </div>
@@ -75,7 +116,7 @@
                 <a href="" class="smallBorder">Registry</a>
                 <a href="" class="smallBorder">Sell</a>
             </div>
-            <div class="panel-deals smallBorder">
+            <div class="panel-deals smallBorder hideOnMobile">
                 <a href="">New Launch|Shop Now</a>
             </div>
         </div>
@@ -176,17 +217,17 @@
             </div>
             <a href="">See more</a>
         </div>
-        <div class="box singleBox">
+        <div class="box singleBox hideOnMobile">
             <h2>Toys Under $25</h2>
             <img src="./images/box9_image.jpg" alt="">
             <a href="">Shop Now</a>
         </div>
-        <div class="box singleBox">
+        <div class="box singleBox hideOnMobile">
             <h2>Beauty steals under $25</h2>
             <img src="./images/box10_image.jpg" alt="">
             <a href="">Shop Now</a>
         </div>
-        <div class="box singleBox">
+        <div class="box singleBox hideOnMobile">
             <h2>Home decor under $25</h2>
             <img src="./images/box3_image.jpg" alt="">
             <a href="">Shop Now</a>
@@ -409,7 +450,7 @@
         </a>
 
         <div class="foot-panel2">
-            <ul>
+            <ul class="hideOnMobile">
                 <p>Get to Know Us</p>
                 <li><a href="">Careers</a></li>
                 <li><a href="">Blog</a></li>
@@ -430,7 +471,7 @@
                 <li><a href="">See More Make Money with Us</a></li>
             </ul>
 
-            <ul>
+            <ul class="hideOnMobile">
                 <p>Amazon Payment Products</p>
                 <li><a href="">Amazon Business Card</a></li>
                 <li><a href="">Shop with Points</a></li>
@@ -455,7 +496,7 @@
 
         <div class="foot-panel3">
             <!-- logo -->
-            <a href="" class="foot-logo"></a>
+            <a href="" class="foot-logo hideOnMobile"></a>
 
             <!-- Language -->
             <div class="foot-select">
@@ -514,6 +555,8 @@
     <!-- 📁 JavaScripts -->
     <!-- Carousel -->
     <script src="./js/carousel.js"></script>
+    <!-- SideBar -->
+    <script src="./js/sidebar.js"></script>
 
 </body>
 
