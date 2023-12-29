@@ -139,7 +139,7 @@
 /* 2ND PANEL */
 .panel {
     padding: 0.5rem;
-    height: 50px;
+    min-height: fit-content;
     background-color: #1e1f28;
 
     display: flex;
@@ -302,6 +302,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     color: white;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.1), black, rgba(0, 0, 0, 0.1));
@@ -314,4 +315,84 @@
 
 
 /* ////////////////////////////////////////////////////// */
-/* 📁 Carousel */
+/* 📁 Boxes */
+.shop-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 1rem 0;
+
+    background-color: #d8d8d8;
+}
+.box{
+    height: 420px;
+    width: 380px;
+    /* border: 2px solid black; */
+    padding: 0.8rem;
+    background-color: #ffffff;
+}
+.box a{
+    color: #007185;
+}
+.box a:hover{
+    color: #ffab3d;
+}
+
+/* Single Image Box Styling */
+.singleBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    box-sizing: border-box;
+}
+.singleBox img{
+    height: 75%;
+    width: auto;
+}
+
+/* Grid Image Box Styling */
+.gridBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.gridBox .gridBox-imgContainer{
+    height: 75%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(2 , minmax(150px, 1fr));
+    place-content: center;
+
+    gap: 1rem;
+}
+.gridBox-imgContainer .imgCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-decoration: none;
+}
+.imgCon img{
+    height: auto;
+    width: 100%;
+}
+.imgCon p{
+    align-self: flex-start;
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* ////////////////////////////////////////////////////// */
+/* 📁 MEDIA QUERY */
+/* Media Query */
